@@ -28,6 +28,10 @@ public class Student extends Persoana{
 
     }
 
+    public void mananca(){
+        System.out.println("Studentul mananca in pauza.");
+    }
+
     public String getFaculta() {
         return faculta;
     }

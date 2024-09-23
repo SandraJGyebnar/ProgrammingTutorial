@@ -22,8 +22,31 @@ public class Angajat extends Persoana {
         System.out.println("Pozitia angajatului in firma este " + pozitie);
         System.out.println("Salarul angajatului este " + salar);
         System.out.println("Experienta angajatului este de " + experienta);
+    }
 
 
+
+    public void mananca(){
+        super.mananca();
+        System.out.println("Angajatul mananca cand are pauza.");
+    }
+
+    //polimorfism static
+
+    public void marire(){
+        System.out.println("Angajatul primeste marirea anuala standard");
+    }
+
+    public void marire(int procent){
+        System.out.println("Angajatul primeste marirea anuala de " + procent + "%");
+    }
+
+    public void marire(String grad){
+        System.out.println("Angajatul primeste gradul " + grad);
+    }
+
+    public void marire(String grad, int procent){
+        System.out.println("Angajatul primeste gradul " + grad + "procentul de" + procent);
     }
 
     public String getFirma() {
