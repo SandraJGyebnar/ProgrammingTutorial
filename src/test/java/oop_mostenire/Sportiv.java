@@ -1,10 +1,10 @@
 package oop_mostenire;
 
-public class Sportiv extends Persoana{
+public class Sportiv extends Persoana implements SportivInterface{
 
     private String sport;
     private boolean sportEchipa;
-    private int experienta;
+    private int experienta1;
     private boolean performanta;
     private int medali;
 
@@ -13,7 +13,7 @@ public class Sportiv extends Persoana{
         super(nume, prenume, varsta, sex, adresa);
         this.sport = sport;
         this.sportEchipa = sportEchipa;
-        this.experienta = experienta;
+        this.experienta1 = experienta;
         this.medali = medali;
         this.performanta = performanta;
     }
@@ -22,7 +22,7 @@ public class Sportiv extends Persoana{
         infoPersoana();
         System.out.println("Sportul pe care il practica este " + sport);
         System.out.println("Sportivul face parte dintr-o echipa?  " + sportEchipa);
-        System.out.println("De cati ani practica sportul? " + experienta);
+        System.out.println("De cati ani practica sportul? " + experienta1);
         System.out.println(" Practica sport de performanta? " + performanta );
         System.out.println("Cate medalii a castigat sportivul " + medali);
     }
@@ -48,11 +48,11 @@ public class Sportiv extends Persoana{
     }
 
     public int getExperienta() {
-        return experienta;
+        return experienta1;
     }
 
     public void setExperienta(int experienta) {
-        this.experienta = experienta;
+        this.experienta1 = experienta;
     }
 
     public boolean isPerformanta() {
@@ -69,6 +69,30 @@ public class Sportiv extends Persoana{
 
     public void setMedali(int medali) {
         this.medali = medali;
+    }
+
+    @Override
+    public void seAntreneaza() {
+        System.out.println("Sportivul Se antreneaza zilnic");
+
+    }
+
+    @Override
+    public void nuLipsesteDeLaAntrenament() {
+        System.out.println("Sportivul nu lipseste de la antrenament.");
+
+    }
+
+    @Override
+    public void manancaSanatos() {
+        System.out.println("Sportivul mananca sanatos");
+
+    }
+
+    @Override
+    public void iaSuplimente() {
+        System.out.println("Sportivul ia suplimente");
+
     }
 }
 
