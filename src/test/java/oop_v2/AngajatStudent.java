@@ -1,24 +1,20 @@
-package oop_mostenire;
+package oop_v2;
 
-public class AngajatSportivStudent extends Persoana implements AngajatInterface,StudentInterface,SportivInterface {
+public class AngajatStudent extends Persoana{
     private String firma;
     private String pozitie;
     private int salar;
     private String experienta;
+
     private String faculta;
     private String domeniu;
     private int an;
     private boolean bursa;
     private boolean restante;
-    private String sport;
-    private boolean sportEchipa;
-    private int experienta1;
-    private boolean performanta;
-    private int medali;
 
-    public AngajatSportivStudent(String nume, String prenume, int varsta, String sex, String adresa, String firma,
-                                 String pozitie, int salar, String experienta, String faculta, String domeniu, int an,
-                                 boolean bursa, boolean restante, String sport, boolean sportEchipa, int experienta1, boolean performanta, int medali) {
+    public AngajatStudent(String nume, String prenume, int varsta, String sex, String adresa,
+                          String firma, String pozitie, int salar, String experienta, String faculta, String domeniu,
+                          int an, boolean bursa, boolean restante) {
         super(nume, prenume, varsta, sex, adresa);
         this.firma = firma;
         this.pozitie = pozitie;
@@ -29,11 +25,6 @@ public class AngajatSportivStudent extends Persoana implements AngajatInterface,
         this.an = an;
         this.bursa = bursa;
         this.restante = restante;
-        this.sport = sport;
-        this.sportEchipa = sportEchipa;
-        this.experienta1 = experienta1;
-        this.performanta = performanta;
-        this.medali = medali;
     }
 
     @Override

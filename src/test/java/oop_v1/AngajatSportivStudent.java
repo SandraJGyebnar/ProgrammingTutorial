@@ -1,7 +1,10 @@
-package oop_mostenire;
+package oop_v1;
 
-public class SportivStudent extends Persoana implements SportivInterface,StudentInterface{
-
+public class AngajatSportivStudent extends Persoana implements AngajatInterface,StudentInterface,SportivInterface {
+    private String firma;
+    private String pozitie;
+    private int salar;
+    private String experienta;
     private String faculta;
     private String domeniu;
     private int an;
@@ -13,9 +16,14 @@ public class SportivStudent extends Persoana implements SportivInterface,Student
     private boolean performanta;
     private int medali;
 
-    public SportivStudent(String nume, String prenume, int varsta, String sex, String adresa, String faculta, String domeniu,
-                          int an, boolean bursa, boolean restante, String sport, boolean sportEchipa, int experienta1, boolean performanta, int medali) {
+    public AngajatSportivStudent(String nume, String prenume, int varsta, String sex, String adresa, String firma,
+                                 String pozitie, int salar, String experienta, String faculta, String domeniu, int an,
+                                 boolean bursa, boolean restante, String sport, boolean sportEchipa, int experienta1, boolean performanta, int medali) {
         super(nume, prenume, varsta, sex, adresa);
+        this.firma = firma;
+        this.pozitie = pozitie;
+        this.salar = salar;
+        this.experienta = experienta;
         this.faculta = faculta;
         this.domeniu = domeniu;
         this.an = an;
@@ -26,6 +34,26 @@ public class SportivStudent extends Persoana implements SportivInterface,Student
         this.experienta1 = experienta1;
         this.performanta = performanta;
         this.medali = medali;
+    }
+
+    @Override
+    public void ajungeLaTimpLaBirou() {
+
+    }
+
+    @Override
+    public void munceste() {
+
+    }
+
+    @Override
+    public void nuAreAbsente() {
+
+    }
+
+    @Override
+    public void respectaConduita() {
+
     }
 
     @Override

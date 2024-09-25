@@ -1,29 +1,18 @@
-package oop_mostenire;
+package oop_v2;
 
-public class AngajatStudent extends Persoana implements AngajatInterface,StudentInterface {
+public class Angajat extends Persoana{
     private String firma;
     private String pozitie;
     private int salar;
     private String experienta;
 
-    private String faculta;
-    private String domeniu;
-    private int an;
-    private boolean bursa;
-    private boolean restante;
-
-    public AngajatStudent(String nume, String prenume, int varsta, String sex, String adresa, String firma,
-                          String pozitie, int salar, String experienta, String faculta, String domeniu, int an, boolean bursa, boolean restante) {
+    public Angajat(String nume, String prenume, int varsta, String sex, String adresa,
+                   String firma, String pozitie, int salar, String experienta) {
         super(nume, prenume, varsta, sex, adresa);
         this.firma = firma;
         this.pozitie = pozitie;
         this.salar = salar;
         this.experienta = experienta;
-        this.faculta = faculta;
-        this.domeniu = domeniu;
-        this.an = an;
-        this.bursa = bursa;
-        this.restante = restante;
     }
 
     @Override
@@ -43,6 +32,26 @@ public class AngajatStudent extends Persoana implements AngajatInterface,Student
 
     @Override
     public void respectaConduita() {
+
+    }
+
+    @Override
+    public void seAntreneaza() {
+
+    }
+
+    @Override
+    public void nuLipsesteDeLaAntrenament() {
+
+    }
+
+    @Override
+    public void manancaSanatos() {
+
+    }
+
+    @Override
+    public void iaSuplimente() {
 
     }
 

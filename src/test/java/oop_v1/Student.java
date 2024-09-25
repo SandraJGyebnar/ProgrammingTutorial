@@ -1,4 +1,4 @@
-package oop_mostenire;
+package oop_v1;
 
 public class Student extends Persoana implements StudentInterface{
 
@@ -8,13 +8,14 @@ public class Student extends Persoana implements StudentInterface{
     private boolean bursa;
     private boolean restante;
 
-    public Student(String nume, String prenume, int varsta, String sex, String adresa,
-                   String faculta, String domeniu, boolean bursa, int an, boolean restante) {
+    public Student(String nume, String prenume, int varsta, String sex,
+                   String adresa, String faculta, String domeniu,
+                   int an, boolean bursa, boolean restante) {
         super(nume, prenume, varsta, sex, adresa);
         this.faculta = faculta;
         this.domeniu = domeniu;
-        this.bursa = bursa;
         this.an = an;
+        this.bursa = bursa;
         this.restante = restante;
     }
 

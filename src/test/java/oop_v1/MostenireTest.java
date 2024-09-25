@@ -1,4 +1,4 @@
-package oop_mostenire;
+package oop_v1;
 
 import org.testng.annotations.Test;
 
@@ -36,7 +36,7 @@ public class MostenireTest {
 //        System.out.println();
 //
         Student student = new Student("Ionescu","Alina",21,"feminin",
-                "Timisoara","Politehnica","IT",false,3,true);
+                "Timisoara","Politehnica","IT",3,true,true);
         student.infoStudent();
 
         student.saNuMeargaInRestanta();
